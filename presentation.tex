@@ -1,0 +1,106 @@
+\documentclass{beamer}
+\usepackage[UTF8]{ctex}
+\usetheme{Boadilla}
+\title{}
+\author[]{}
+\institute[]{}
+
+\AtBeginSection[]
+{
+\begin{frame}
+        \tableofcontents[currentsection,hideallsubsections]
+\end{frame}
+}
+
+\AtBeginSubsection[]
+{
+\begin{frame}[shrink]
+        \tableofcontents[sectionstyle=show/shaded,subsectionstyle=show/shaded/hide,subsubsectionstyle=show/hide/hide]
+ \end{frame}
+}
+
+\AtBeginSubsubsection[]
+{
+\begin{frame}[shrink]
+        \tableofcontents[sectionstyle=show/shaded,subsectionstyle=show/shaded/hide,subsubsectionstyle=show/shaded/hide]
+ \end{frame}
+}
+
+
+\begin{document}
+
+    \maketitle
+
+\begin{frame}
+    \tableofcontents
+\end{frame}
+
+
+
+\section{}
+\subsection{}
+\subsubsection{}
+
+\begin{frame}{}{}
+
+\end{frame}
+
+\begin{frame}{}{}
+    \begin{itemize}
+        \item 
+        \item 
+        \item 
+        \item 
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{}{}
+%    \begin{figure}
+%        \includegraphics[width=0.3\textwidth]{.png}
+%        \caption{word\footnote{}}
+%    \end{figure}
+\end{frame}
+
+
+\begin{frame}{}{}
+\[\begin{split}
+Re\left[G(\omega)\right]&=\frac{1}{\pi} \left\{ \mathcal{P}\int_{-\infty}^{0}\frac{Im\left[G(\omega')\right]}{\omega'-\omega}\mathrm{d}\omega' + \mathcal{P}\int_{0}^{+\infty}\frac{Im\left[G(\omega')\right]}{\omega'-\omega}\mathrm{d}\omega' \right\} \\
+&=\frac{1}{\pi} \left\{ \mathcal{P}\int_{0}^{+\infty}\frac{Im\left[G(-\omega')\right]}{-\omega'-\omega}\mathrm{d}\omega' + \mathcal{P}\int_{0}^{+\infty}\frac{Im\left[G(\omega')\right]}{\omega'-\omega}\mathrm{d}\omega' \right\} \\
+&= \frac{2}{\pi} \mathcal{P}\int_{0}^{+\infty}\frac{\omega' Im\left[G(\omega')\right]}{\omega'^{2}-\omega^{2}}\mathrm{d}\omega'
+\\
+Im\left[G(\omega)\right]&=-\frac{1}{\pi} \left\{ \mathcal{P}\int_{-\infty}^{0}\frac{Re\left[G(\omega')\right]}{\omega'-\omega}\mathrm{d}\omega' + \mathcal{P}\int_{0}^{+\infty}\frac{Re\left[G(\omega')\right]}{\omega'-\omega}\mathrm{d}\omega' \right\} \\
+&=-\frac{1}{\pi} \left\{ \mathcal{P}\int_{0}^{+\infty}\frac{Re\left[G(-\omega')\right]}{-\omega'-\omega}\mathrm{d}\omega' + \mathcal{P}\int_{0}^{+\infty}\frac{Re\left[G(\omega')\right]}{\omega'-\omega}\mathrm{d}\omega' \right\} \\
+&=-\frac{2\omega}{\pi}\mathcal{P}\int_{0}^{+\infty}\frac{Re\left[G(\omega')\right]}{\omega'^{2}-\omega^{2}}\mathrm{d}\omega'
+\end{split}\]
+\end{frame}
+
+
+
+\begin{frame}{}{}
+%    \begin{figure}
+%        \includegraphics[width=0.7\textwidth]{.png}
+%        \caption{word\footnote{}}
+%    \end{figure}
+\end{frame}
+
+\begin{frame}{}{}
+    \begin{itemize}
+        \item 
+        \item 
+        \item 
+        \item 
+        \item 
+    \end{itemize}
+\end{frame}
+
+
+
+
+\begin{frame}
+    \Huge
+    \begin{center}
+        Thank You !
+    \end{center}
+\end{frame}
+
+\end{document}
