@@ -1,0 +1,45 @@
+\documentclass[12pt, a4paper, oneside]{ctexart}
+\usepackage{amsmath, amsthm, amssymb, appendix, bm, graphicx, hyperref, mathrsfs}
+
+\title{\textbf{标题}}
+\author{作者}
+\date{\today}
+\linespread{1.5}
+
+\begin{document}
+
+\maketitle
+
+\setcounter{page}{0}
+\maketitle
+\thispagestyle{empty}
+
+\pagenumbering{Roman}
+\setcounter{page}{1}
+\tableofcontents
+
+\newpage
+\setcounter{page}{1}
+\pagenumbering{arabic}
+
+\section{前言}
+
+
+\section{一级标题}
+
+\subsection{二级标题}
+
+\subsubsection{三级标题}
+
+
+
+\newpage
+\begin{thebibliography}{99}
+    \bibitem{ref1}作者. \emph{标题}. 时间.
+    \bibitem{ref2}作者. \emph{标题}. 时间.
+    \bibitem{ref3}作者. \emph{标题}. 时间.
+\end{thebibliography}
+
+
+
+\end{document}
